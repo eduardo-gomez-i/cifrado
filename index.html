@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptacion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!------ Include the above in your HEAD tag ---------->
+
+    <div class="login-wrap">
+        <div class="login-html text-center">
+            <Img src="LOGO TECNMITSJR COLOR(1)1.png" width="75px" />
+            <h4>TECNOLÓGICO NACIONAL DE MÉXICO</h4>
+            <h5>PRÁCTICA 2.1 CIFRADO SIMÉTRICO Y ASIMÉTRICO</h5>
+            
+            <h6>INSTITUTO TECNOLÓGICO DE SAN JUAN DEL RÍO
+                <br><br>
+                P R E S E N T A:
+                <br><br>
+                Gomez Ibarra Eduardo Manuel 18590227
+                <br>
+                Jose Omar Urquiza Lopez 18590227
+                <br><br>
+                M.C. Claudia Morales Castro
+                <br>
+                INGENIERÍA EN SISTEMAS COMPUTACIONALES
+                <br><br>
+                PERIODO ENERO - JUNIO 2022</h6>
+                <hr>
+                <h5>Selecciona una opción</h5>
+            
+            <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Cifrado Por Desplazamiento</label>
+            <input id="tab-2" type="radio" name="tab" class="for-pwd"><label for="tab-2" class="tab">Cifrado por RSA</label>
+
+            
+            <div class="login-form">
+                <div class="sign-in-htm">            
+                    <div class="group">
+                        <Img src="des.png" width="200px" />
+                        <div class="hr"></div>
+                        <form action="indexD.php" method="Post">
+                            <input type="submit" class="button" onclick="encriptar()" value="Encriptar">
+                        </form>
+                    </div>
+                    <div class="hr"></div>
+                    <div class="group">
+                        <span id="resultadoEncriptado"></span>
+                    </div>
+                </div>
+                <div class="for-pwd-htm">
+                    <div class="group">
+                        <Img src="rsa.png" width="200px" />
+                        <div class="hr"></div>
+                        <form action="indexRSA.php" method="Post">
+                            <input type="submit" class="button" onclick="encriptar()" value="Encriptar">
+                        </form>
+                    </div>
+                    <div class="hr"></div>
+                    <span id="resultadoDesencriptado"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
